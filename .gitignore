@@ -1,0 +1,10 @@
+# Ignore common unnecessary files
+*.log
+*.tmp
+*.bak
+*.swp
+node_modules/
+dist/
+
+# Ensure mp4 files are NOT ignored
+!*.mp4
