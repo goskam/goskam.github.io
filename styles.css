@@ -131,3 +131,29 @@ footer {
 footer p {
     font-size: 1em;
 }
+
+/* Container for the video */
+.responsive-video {
+    width: 100%;         /* Ensure it takes up the full width of its container */
+    height: auto;        /* Maintain the aspect ratio */
+    max-width: 100%;     /* Ensure it doesn't overflow the container */
+    display: block;      /* Ensure it's displayed as a block element */
+}
+
+/* Optionally: If you want to enforce the aspect ratio of 458x984 */
+.responsive-video-wrapper {
+    position: relative;
+    padding-bottom: 215%; /* Aspect ratio of 458:984 => 984 / 458 * 100 = 215% */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.responsive-video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
