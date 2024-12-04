@@ -14,9 +14,10 @@ body {
     padding: 0 20px;
 }
 
+/* #e5a19e; Soft pink as main color */
 /* Header Styles */
 header {
-    background-color: #e5a19e; /* Soft pink as main color */
+    background-color: #edcdb1;
     color: white; /* White text for contrast */
     padding: 60px 20px;
     text-align: center;
@@ -87,7 +88,7 @@ video {
 /* Features Section */
 .features {
     padding: 60px 20px;
-    background-color: #f7f7f7; /* Light grayish background */
+    background-color: #ffffff; /* Light grayish background */
     text-align: center;
 }
 
@@ -99,20 +100,18 @@ video {
 }
 
 .feature-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates three columns of equal width */
+    grid-gap: 20px;  /* Adds space between the cards */
+    margin-top: 20px;
 }
 
 .feature-card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    width: 280px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f4f4f4;  /* Add background color or other styles */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Optional: Adds a shadow for better visual separation */
+    text-align: center;  /* Centers the content */
 }
 
 .feature-card h3 {
@@ -129,6 +128,20 @@ video {
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens, switch to 2x3 grid */
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens, stack the cards in 1 column */
+    .feature-cards {
+        grid-template-columns: 1fr;  /* 1 column on very small screens */
+    }
 }
 
 /* Footer Styles */
