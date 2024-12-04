@@ -72,6 +72,11 @@ p {
     font-weight: 600;
 }
 
+.video-section p {
+    color: #687c71; /* Muted green color */
+
+}
+
 .video-wrapper {
     max-width: 100%;
     text-align: center;
@@ -170,4 +175,47 @@ footer p {
         width: 100%;
         max-width: 500px;
     }
+}
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background to contrast with the white page */
+    border-top: 2px solid #ddd; /* Subtle border separating this section */
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #687c71; /* Muted green to match your color palette */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555; /* A dark gray for readability */
+    margin-bottom: 30px;
+}
+
+#contact .cta-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #687c71; /* Muted green for consistency */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+#contact .cta-btn:hover {
+    background-color: #5c6b5b; /* Darker green for hover effect */
 }
